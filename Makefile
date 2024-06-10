@@ -4,6 +4,7 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = melon.c
+ASMS = write.s
 
-build: $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+build:
+	$(CC) $(CFLAGS) $(SRCS) $(ASMS) -o $(TARGET)
