@@ -3,8 +3,8 @@
 
 write:
 	mov rax, 1
-	mov rdi, 1
-	mov rsi, 62
-	mov rdx, 1
+	mov rdi, rdi
+	mov rsi, rsi
+	mov rdx, rdx
 	syscall
 	ret
